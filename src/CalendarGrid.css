@@ -1,0 +1,39 @@
+/* CalendarGrid.css */
+
+.calendar-grid {
+  display: grid;
+  gap: 5px;
+  margin: 20px auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.month-row {
+  display: grid;
+  grid-template-columns: repeat(32, 1fr); /* 1 column for month name and 31 for days */
+  align-items: center;
+}
+
+.month-cell {
+  font-weight: bold;
+  text-align: center;
+  background-color: #ddd;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.day-cell {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.day-number {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+}

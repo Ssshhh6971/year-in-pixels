@@ -1,0 +1,134 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+/* Main App container */
+.App {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* Buttons for mood selection */
+.mood-selector button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.mood-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Calendar grid layout 
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  gap: 20px;
+  padding: 20px;
+}
+
+Each month container 
+.month {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.month h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Days within each month 
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for a weekly layout 
+  gap: 5px;
+}
+
+/* Styling individual day squares 
+.day {
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.day:hover {
+  background-color: #d3d3d3;
+}
+
+.day small {
+  font-size: 10px;
+  display: block;
+  margin-top: 5px;
+}*/
+/* Toggle button for dark/light mode */
+.theme-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Links (optional) */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  text-decoration: underline;
+}
